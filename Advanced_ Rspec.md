@@ -25,7 +25,7 @@ describe User do
   end
 end
 ```
-##To summarize, the extra features used are:
+## To summarize, the extra features used are:
 
 - Let allows you to dynamically define a method that will return the given value. We use this to define the only varying bit of data: the year. It is important to note that let memoizes the result. I.e. it only calls the block once. Also, it only executes the block when you actually call it.
 - Subject is a convenience helper that lets us specify the “thing” that is under test. In our case that’s a User instance. subject also memoizes the result. And just like let, it also only executes the block when you actually call it.
